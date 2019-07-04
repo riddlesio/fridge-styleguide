@@ -11,6 +11,4 @@ after restarting,
 __configure checkstyle:__
 
 `preferences > Other Settings > Checkstyle > + > Use checkstyle via HTTP
-point it to a raw xml in this repo. > click OK (description is mandatory)`
-
-__note:__ When adding the checkstyle URL pressing apply might fail. pressing OK still lets you select the config in the checkstyle menu and perform scans.
+point it to a raw xml in this repo. (description is mandatory)`
