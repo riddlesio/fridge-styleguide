@@ -10,5 +10,10 @@ __get the checkstyle-idea plugin:__
 after restarting, 
 __configure checkstyle:__
 
+`file > Other Settings > Preferences for new projects > > Other Settings > Checkstyle > + > Use checkstyle via HTTP
+point it to a raw xml in this repo. (description is mandatory)`
+
+__exisiting projects should be configured independently afaik:__
+
 `preferences > Other Settings > Checkstyle > + > Use checkstyle via HTTP
 point it to a raw xml in this repo. (description is mandatory)`
