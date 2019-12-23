@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BASE_URL=https://raw.githubusercontent.com/riddlesio/somatics-styleguide/master/
+BASE_URL=https://raw.githubusercontent.com/riddlesio/somatics-styleguide/experimental/githooks
 
 install_githooks() {
   curl $BASE_URL/git/$1/hooks/pre-commit > .git/hooks/pre-commit
