@@ -1,0 +1,12 @@
+#!/bin/bash
+
+currentBranch=$(git rev-parse --abbrev-ref HEAD)
+
+if [ $currentBranch == master ]; then
+    versionUpdated=$(git diff --staged __init__.py | grep 'version' > /dev/null 2>&1; echo $?)
+
+    if [ $versionUpdated == 1 ]; then
+        echo "Update the version before pushing to master!"
+        exit 1;
+    fi
+fi
