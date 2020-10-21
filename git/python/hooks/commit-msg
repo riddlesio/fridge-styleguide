@@ -8,7 +8,7 @@ if grep -q -i -e "WIP" -e "work in progress" $1; then
     fi
 fi
 
-if ! grep -q -i -e "\[t:[1-99][mh]\]" $1; then
+if ! grep -q -i -E "\[t:[1-9][mh]\]|\[t:[1-9][0-9][mh]\]" $1; then
     read -p "You're about to add a commit without reporting how much time you spent. \[t:[1-99][mh]\] Are you sure you want to continue? [y|n] " -n 1 -r LOG_TIME < /dev/tty
     echo
     if echo $LOG_TIME | grep -E '^[Nn]$' > /dev/null; then
